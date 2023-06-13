@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container_shop">
+      <div class="side_cart">
+        <div class="cart_close">
+          <img src="img/arrow_next.png" />
+        </div>
+        <div class="cart_header">
+          <p>SHOPPING CART</p>
+        </div>
+        <div class="cart_main">
+          <div class="cart_main_head">
+            <p class="col-4 col-md-4 col-xl-4">PRODUCT</p>
+            <p class="col-4 col-md-4 col-xl-4">PRICE</p>
+            <p class="col-4 col-md-4 col-xl-4">QUANTITY</p>
+          </div>
+          <div class="cart_product">
+            <div class="cart_product_pic col-4 col-md-4 col-xl-4">
+              <img src="img/Tshirt_B_F.jpg" />
+              <div class="cart_product_size"><span>M</span></div>
+            </div>
+            <div class="cart_product_price col-4 col-md-4 col-xl-4">
+              <p>$1,290 NTD</p>
+            </div>
+            <div class="cart_product_qty col-4 col-md-4 col-xl-4">
+              <input type="number" value="1" min="1" max="9" />
+            </div>
+          </div>
+        </div>
+        <div class="cart_footer">
+          <span>SUBTOTAL</span>
+          <p>$1,290 NTD</p>
+          <a href="06-3merch_checkout-1.html">
+            <button>
+              <span>CHECK OUT</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="shop_menu row">
+        <div class="side_blank col-md-1 col-xl-1">1</div>
+        <div class="shop_head">
+          <div class="shop_head_logo">
+            <a href="06-1merch_shop.html"
+              ><img src="img/theta_logo_b1.png"
+            /></a>
+          </div>
+          <a href=""><label for="menu_switch">MENU</label></a>
+          <input type="checkbox" id="menu_switch" />
+          <div class="side_menu" id="MS">
+            <a href="#"><span>T-Shirts</span> </a>
+            <a href="#"><span>Apparel</span> </a>
+            <a href="#"><span>Music</span> </a>
+            <a href="#"><span>Other</span> </a>
+          </div>
+
+          <a href="#" id="cart">CART</a>
+        </div>
+        <div class="shop_display col-md-10 col-xl-10">
+          <div class="shop_main">
+            <div class="shop_card">
+              <a href="06-2merch_detail.html"
+                ><img src="img/Tshirt_B_F.jpg"
+              /></a>
+            </div>
+            <div class="shop_card">
+              <a href="06-2merch_detail.html"
+                ><img src="img/Tshirt_B_F.jpg"
+              /></a>
+            </div>
+            <div class="shop_card">
+              <a href="06-2merch_detail.html"
+                ><img src="img/Tshirt_B_F.jpg"
+              /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_W_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_W_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_W_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_B_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_B_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_B_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_W_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_W_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_W_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_B_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_B_F.jpg" /></a>
+            </div>
+            <div class="shop_card">
+              <a href="#"><img src="img/Tshirt_B_F.jpg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="side_blank col-md-1 col-xl-1">1</div>
+      </div>
+      <div class="footer">
+        <footer></footer>
+      </div>
+    </div>
+
+    <script>
+      var side = document.getElementsByClassName("side_cart");
+      var close = document.getElementsByClassName("cart_close");
+      var cart = document.querySelector("#cart");
+      let width = window.innerWidth;
+      let clickOrNot = false;
+      window.addEventListener("resize", function () {
+        width = window.innerWidth;
+        if (clickOrNot === true) {
+          slideIn();
+        }
+      });
+      function slideIn() {
+        clickOrNot = true;
+        if (width < 768) {
+          side[0].style.left = `0%`;
+          side[0].style.width = `100%`;
+        } else {
+          side[0].style.left = `calc(100% - 480px)`;
+          side[0].style.width = `480px`;
+        }
+      }
+
+      function getOut() {
+        clickOrNot = false;
+        side[0].style.left = "100%";
+      }
+
+      cart.addEventListener("click", slideIn, false);
+
+      close[0].addEventListener("click", getOut, false);
+    </script>
+  </body>
+</html>

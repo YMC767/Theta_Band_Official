@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHECKOUT</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container_checkout">
+      <div class="row">
+        <div class="checkout_main col-12 col-md-12 col-xl-7">
+          <div class="row">
+            <div class="checkout_payment_blank col-1 col-md-2 col-xl-2">.</div>
+            <div class="checkout_payment_main col-10 col-md-8 col-xl-8">
+              <div class="payment_header">
+                <div class="payment_header_logo">
+                  <img src="img/theta_logo_b1.png" />
+                </div>
+                <div class="payment_header_nav">
+                  <p>
+                    Cart > <a href="06-3merch_checkout-1.html">Information</a> >
+                    <span>Payment</span> > Review
+                  </p>
+                </div>
+              </div>
+              <div class="checkout_cart_rwd">
+                <div class="review_head">
+                  <div class="cart_review_pic">
+                    <img src="img/Tshirt_B_F.jpg" />
+                    <span>1</span>
+                  </div>
+                  <div class="cart_review_info">
+                    <p>THETA LOGO T-SHIRT</p>
+                    <p>Medium</p>
+                  </div>
+                  <div class="review_price">
+                    <p>$1,290</p>
+                  </div>
+                </div>
+                <div class="cart_review_discount">
+                  <input type="text" placeholder="Gift card or discount code" />
+                  <button><span>Apply</span></button>
+                </div>
+                <div class="review_total"></div>
+                <div class="cart_review_subtotal">
+                  <div class="cart_review_subtotal_txt col-xl-6">
+                    <p>Subtotal</p>
+                  </div>
+                  <div class="cart_review_subtotal_num col-xl-6">
+                    <p>$1,290</p>
+                  </div>
+                </div>
+                <div class="cart_review_shipping">
+                  <div class="cart_review_subtotal_txt col-xl-6">
+                    <p>Shipping</p>
+                  </div>
+                  <div class="cart_review_subtotal_num col-xl-6">
+                    <p>100</p>
+                  </div>
+                </div>
+                <div class="cart_review_total">
+                  <div class="cart_review_subtotal_txt col-xl-6">
+                    <span>Total</span>
+                  </div>
+                  <div class="cart_review_subtotal_num col-xl-6">
+                    <p>NTD<span>$1,390</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="payment_main_contact">
+                <div class="payment_contact_check">
+                  <p>Contact</p>
+                  <span>Change</span>
+                </div>
+                <div class="payment_contact_shipping">
+                  <p>Ship to</p>
+                  <span>Change</span>
+                </div>
+              </div>
+              <div class="payment_main_content">
+                <div class="payment_main_payment">
+                  <p>Payment</p>
+                  <p><span>All transactions are secure ane encrypted</span></p>
+                </div>
+                <div class="payment_selected_payment">
+                  <div class="payment_selected_creditcard">
+                    <input
+                      type="radio"
+                      id="radio"
+                      name="payment"
+                      value="Credit card"
+                      placeholder="Credit card"
+                    />
+                    <label for="Credit card">Credit card</label>
+                  </div>
+                  <div class="payment_creditcard_input">
+                    <input type="text" placeholder="Card number" />
+                    <input type="text" placeholder="Name on card" />
+                    <div class="creditcard_info">
+                      <input type="text" placeholder="Expiration date(MM/YY)" />
+                      <input type="text" placeholder="Security code" />
+                    </div>
+                  </div>
+                  <div class="payment_selected_paypal">
+                    <input
+                      type="radio"
+                      id="radio"
+                      name="payment"
+                      value="Paypal"
+                      placeholder="Paypal"
+                    />
+                    <label for="Paypal">Paypal</label>
+                  </div>
+                </div>
+                <div class="payment_billing_address">
+                  <p>Billing Address</p>
+                  <p>
+                    <span
+                      >Select the address that matches your card or payment
+                      method</span
+                    >
+                  </p>
+                  <div class="billing_address_input">
+                    <div class="BAI_same">
+                      <input type="radio" name="bill" id="bill" />
+                      <label for="bill">Same as shipping address</label>
+                    </div>
+                    <div class="BAI_diff">
+                      <input type="radio" name="bill" id="bill" />
+                      <label for="bill">Use a different billing address</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment_billing_address">
+                  <p>Shipping</p>
+                  <div class="billing_address_input">
+                    <div class="BAI_same">
+                      <input type="radio" name="shipping" id="shipping" />
+                      <label for="bill">Domestic shipping</label>
+                    </div>
+                    <div class="BAI_diff">
+                      <input type="radio" name="shipping" id="shipping" />
+                      <label for="bill">International shipping</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment_billing_address">
+                  <p>Remember me</p>
+                  <div class="billing_address_input">
+                    <div class="BAI_same">
+                      <input type="radio" name="RM" id="RM" />
+                      <label for="bill"
+                        >Save my information for a faster checkout</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment_main_nextstep">
+                <div class="payment_main_rtc">
+                  <a href="06-3merch_checkout-1.html"
+                    ><img src="img/arrow_prev.png"
+                  /></a>
+                  <a href="06-3merch_checkout-1.html"
+                    ><p>Return to Information</p></a
+                  >
+                </div>
+                <div class="payment_main_RO">
+                  <a href="#"
+                    ><button>
+                      <span>Review order</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+              <div class="payment_main_policy">
+                <a href="#">Refund policy</a>
+                <a href="#">Privacy policy</a>
+              </div>
+            </div>
+            <div class="checkout_payment_blank col-1 col-md-2 col-xl-2"></div>
+          </div>
+        </div>
+        <div class="checkout_cart col-xl-4">
+          <div class="review_head">
+            <div class="cart_review_pic">
+              <img src="img/Tshirt_B_F.jpg" />
+              <span>1</span>
+            </div>
+            <div class="cart_review_info">
+              <p>THETA LOGO T-SHIRT</p>
+              <p>Medium</p>
+            </div>
+            <div class="review_price">
+              <p>$1,290</p>
+            </div>
+          </div>
+          <div class="cart_review_discount">
+            <input type="text" placeholder="Gift card or discount code" />
+            <button><span>Apply</span></button>
+          </div>
+          <div class="review_total"></div>
+          <div class="cart_review_subtotal">
+            <div class="cart_review_subtotal_txt col-xl-6"><p>Subtotal</p></div>
+            <div class="cart_review_subtotal_num col-xl-6"><p>$1,290</p></div>
+          </div>
+          <div class="cart_review_shipping">
+            <div class="cart_review_subtotal_txt col-xl-6"><p>Shipping</p></div>
+            <div class="cart_review_subtotal_num col-xl-6"><p>100</p></div>
+          </div>
+          <div class="cart_review_total">
+            <div class="cart_review_subtotal_txt col-xl-6">
+              <span>Total</span>
+            </div>
+            <div class="cart_review_subtotal_num col-xl-6">
+              <p>NTD<span>$1,390</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="checkout_blank col-xl-1"></div>
+      </div>
+    </div>
+  </body>
+</html>
